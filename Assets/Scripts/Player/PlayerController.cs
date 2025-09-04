@@ -179,7 +179,7 @@ public class PlayerController : MonoBehaviour
         EnterMoving();
         moveStartPos = transform.localPosition;
         moveTarget = transform.localPosition;
-        moveTarget.x -= 6;
+        moveTarget.x -= switchDistance;
 
     }
 
@@ -200,7 +200,7 @@ public class PlayerController : MonoBehaviour
         EnterMoving();
         moveStartPos = transform.localPosition;
         moveTarget = transform.localPosition;
-        moveTarget.x += 6;
+        moveTarget.x += switchDistance;
     }
 
     void OnPressJump(InputAction.CallbackContext context)
